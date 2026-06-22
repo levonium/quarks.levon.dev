@@ -6,7 +6,6 @@ export default defineConfig({
   titleTemplate: ':title |> Quarks',
   description: 'A personal blog about math, science, and programming',
   cleanUrls: true,
-  srcDir: './',
   head: [
     ['link', { rel: 'icon', href: '/quark.png' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.bunny.net' }],
