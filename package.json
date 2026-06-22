@@ -1,23 +1,15 @@
 {
-  "$schema": "https://json.schemastore.org/package.json",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "lint:assets": "prettier --write .",
-    "lint:php": "./vendor/bin/pint",
-    "lint": "npm run lint:assets && npm run lint:php"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@shufo/prettier-plugin-blade": "^1.15.3",
     "@tailwindcss/vite": "^4.0.0",
-    "chart.js": "^4.5.0",
-    "concurrently": "^9.0.1",
-    "laravel-vite-plugin": "^1.2.0",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwindcss": "^4.0.0",
-    "vite": "^6.2.4"
+    "vite": "^6.2.4",
+    "vitepress": "^1.6.3"
   }
 }
